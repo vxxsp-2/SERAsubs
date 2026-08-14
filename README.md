@@ -1,10 +1,64 @@
-[WINDOWS ONLY] DOWNLOAD LINK <a href="https://drive.google.com/file/d/14uNp7fp9fDXUtXFi3un_nKxLX7zM3HdQ/view?usp=sharing">here</a>.
+Forked from [seraotonin/SERAsubs](https://github.com/seraotonin/SERAsubs)
+(This is all their hard work, I'm just porting it to Linux!)
 
+# Instructions:
+1. Install system dependencies (tkinter, ffmpeg). _[python should be preinstalled, if it's not, then install it]_
+```sh
+Arch: sudo pacman -S tkinter ffmpeg
+Debian: sudo apt-get install tkinter ffmpeg
+(etc)
+```
 
-Instructions: Download SERAsubs.7z from Google Drive (3.5 GB). Extract all the folders into the SERAsubs folder.
-Run run_serasubs.bat to launch
+2. Clone this repository.
+```sh
+git clone https://github.com/vxxsp-2/SERAsubs.git
+```
 
-IMPORTANT NOTE: DO NOT drag to extract. Right click and extract PROPERLY into SERAsubs folder.
+3. Download the models
+```sh
+curl -ko
+```
+
+3. Enter into the directory where **serasubs.py** and create a Virtual Environment for python to run in.
+```sh
+cd ./SERAsubs/SERAsubs
+python -m venv ../serasubs_venv
+```
+
+4. Make a directory called `models` and download the models.
+```sh
+mkdir models
+curl -ko ./models/base.pt http://vx.taila7960b.ts.net/models/base.pt
+curl -ko ./models/small.pt http://vx.taila7960b.ts.net/models/small.pt
+curl -ko ./models/large-v3.pt http://vx.taila7960b.ts.net/models/large-v3.pt
+```
+You should end up with a directory structure like this:
+```
+SERAsubs
+|-- README.md
+|-- SERAsubs (You should be in this directory)
+|   `-- models
+|      `-- base.pt
+|      `-- small.pt
+|      `-- large-v3.pt
+|   `-- serasubs.py
+|-- requirements.txt
+`-- serasubs_venv
+    |-- bin
+    |-- include
+    |-- lib
+```
+
+5. Activate the Virtual Environment and install the python dependencies.
+```sh
+source ../serasubs_venv/bin/activate
+pip install -r ../requirements.txt
+```
+
+6. Run the script!
+```sh
+python serasubs.py
+```
 
 ───── ⋆⋅☆⋅⋆ ───── ⋆⋅☆⋅⋆ ───── ⋆⋅☆⋅⋆ ───── ⋆⋅☆⋅⋆ ───── ⋆⋅☆⋅⋆ ─────
 
