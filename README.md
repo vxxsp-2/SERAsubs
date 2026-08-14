@@ -14,7 +14,7 @@ Debian: sudo apt-get install tkinter ffmpeg
 git clone https://github.com/vxxsp-2/SERAsubs.git
 ```
 
-3. Enter into the directory where **serasubs.py** is located and create a Virtual Environment for python to run in.
+3. Enter into the directory where `serasubs.py` is located and create a Virtual Environment for python to run in.
 ```sh
 cd ./SERAsubs/SERAsubs
 python -m venv ../serasubs_venv
@@ -49,6 +49,7 @@ SERAsubs
 source ../serasubs_venv/bin/activate
 pip install -r ../requirements.txt
 ```
+_(P.S. If you want to take advantage of Compute Platforms supported by your GPU, install PyTorch first following the guide [here](https://pytorch.org)._
 
 6. Run the script!
 ```sh
