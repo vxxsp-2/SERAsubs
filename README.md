@@ -49,7 +49,7 @@ SERAsubs
 source ../serasubs_venv/bin/activate
 pip install -r ../requirements.txt
 ```
-_(P.S. If you want to take advantage of Compute Platforms supported by your GPU, install PyTorch first following the guide [here](https://pytorch.org)._
+_(P.S. If you want to take advantage of Compute Platforms supported by your GPU, install your specific PyTorch first before installing the other requirements by following the guide [here](https://pytorch.org)._
 
 6. Run the script!
 ```sh
