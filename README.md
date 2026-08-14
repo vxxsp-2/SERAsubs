@@ -14,12 +14,7 @@ Debian: sudo apt-get install tkinter ffmpeg
 git clone https://github.com/vxxsp-2/SERAsubs.git
 ```
 
-3. Download the models
-```sh
-curl -ko
-```
-
-3. Enter into the directory where **serasubs.py** and create a Virtual Environment for python to run in.
+3. Enter into the directory where **serasubs.py** is located and create a Virtual Environment for python to run in.
 ```sh
 cd ./SERAsubs/SERAsubs
 python -m venv ../serasubs_venv
